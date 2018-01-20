@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ali.intent_explicit.TampilDataActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tampil Data"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama :"/>
+
+    <TextView
+        android:id="@+id/valuenama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat :"/>
+
+    <TextView
+        android:id="@+id/valuealamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umur :"/>
+
+    <TextView
+        android:id="@+id/valueumur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No HP :"/>
+
+    <TextView
+        android:id="@+id/valueno_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin :"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+         <RadioButton
+            android:id="@+id/valuejeniskelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text=""
+             />
+    </RadioGroup>
+</LinearLayout>

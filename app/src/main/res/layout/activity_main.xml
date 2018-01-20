@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ali.intent_explicit.MainActivity">
+
+  <TextView
+      android:textAlignment="center"
+      android:textAllCaps="true"
+      android:layout_marginBottom="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Aplikasi Input Data"
+      android:id="@+id/txtjudul"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnama"
+        android:text="Masukan Nama :"
+        android:layout_below="@id/txtjudul"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnama"
+        android:layout_below="@id/txtnama"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan Alamat"
+        android:layout_below="@id/edtnama"
+        android:id="@+id/txtalamat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtalamat"
+        android:layout_below="@id/txtalamat"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umur"
+        android:layout_below="@id/edtalamat"
+        android:id="@+id/txtumur"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtumur"
+        android:id="@+id/edtumur"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan No HP"
+        android:id="@+id/txthp"
+        android:layout_below="@id/edtumur"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txthp"
+        android:id="@+id/edthp"/>
+
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Jenis Kelamin"
+      android:layout_below="@id/edthp"
+      android:id="@+id/jeniskelamin"/>
+
+
+
+  <RadioGroup
+      android:id="@+id/radio"
+      android:layout_width="wrap_content"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/jeniskelamin">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-Laki"
+        android:id="@+id/laki-laki"
+        android:checked="true"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:id="@+id/perempuan"/>
+  </RadioGroup>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Kirim data"
+      android:id="@+id/kirimdata"
+      android:layout_below="@id/radio"
+      android:textAlignment="center"/>
+</RelativeLayout>
